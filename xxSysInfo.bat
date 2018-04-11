@@ -65,6 +65,20 @@ ECHO === Net Users: >> %logfile%
 ECHO ============= >> %logfile%
 net users >> %logfile% 2>&1
 
+REM Environment Variables
+ECHO. >> %logfile%
+ECHO ============= >> %logfile%
+ECHO === Environment Variables: >> %logfile%
+ECHO ============= >> %logfile%
+ECHO Output of SET: >> %logfile% 
+set >> %logfile% 2>&1
+ECHO Output of %^%cmdextversion%^%: >> %logfile% 
+echo %cmdextversion% >> %logfile% 2>&1
+ECHO Output of %^%cmdcmdline%^%: >> %logfile% 
+echo %cmdcmdline% >> %logfile% 2>&1
+ECHO Output of %^%errorlevel%^%: >> %logfile% 
+echo %errorlevel% >> %logfile% 2>&1
+
 REM Full Systeminfo
 ECHO. >> %logfile%
 ECHO ============= >> %logfile%
