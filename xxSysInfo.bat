@@ -24,7 +24,7 @@ SET "logfile=%~2"
 ECHO Using %logfile% as log file.
 GOTO CONTINUE
 :UNKNOWN
-SET "logfile=%cd%sysInfo.txt"
+SET "logfile=%cd%\sysInfo.txt"
 ECHO Using %logfile% as log file.
 GOTO CONTINUE
 :CONTINUE
